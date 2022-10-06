@@ -14,8 +14,6 @@ This topic describes the options for securing HTTP traffic into your <%= vars.ap
 
 The Gorouter supports HTTP/HTTPS requests only. For more information about features supported by the Gorouter, see [HTTP Routing](../concepts/http-routing.html).
 
-<%= vars.haproxy_hsts_support %>
-
 To secure non-HTTP traffic over TCP routing, terminate TLS at your load balancer or at the app. For more information, see [Enabling TCP Routing](enabling-tcp-routing.html).
 
 
@@ -72,7 +70,6 @@ The following table summarizes TLS termination options and which option to choos
   <td><a href="#lb_term">Terminating TLS at the Load Balancer Only</a>
   </td>
 </tr>
-<%= vars.ssl_haproxy %>
 </table>
 
 
@@ -124,8 +121,6 @@ The Gorouter supports both RSA and ECDSA certificates in PEM encoding. In the ca
 <%= partial 'ssl_multicerts_gorouter' %>
 <% else %>
 <% end %>
-
-<%= vars.multiple_certs_haproxy %>
 
 ## <a id="ciphers"></a> TLS Cipher Suite Support
 
